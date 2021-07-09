@@ -1,0 +1,18 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "MIO.moc3",
+		"Textures": [
+			"MIO.1024/texture_00.png"
+		],
+		"Physics": "MIO.physics3.json",
+		"DisplayInfo": "MIO.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	]
+}
