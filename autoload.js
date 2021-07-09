@@ -1,6 +1,12 @@
 // 注意：live2d_path 参数应使用绝对路径
-const live2d_path = "https://cdn.jsdelivr.net/gh/perqin/live2d-widget@latest/";
-//const live2d_path = "/live2d-widget/";
+let live2d_path;
+(function () {
+	// A hack to get the resources relative to this script
+	const src = document.currentScript.src;
+	// MUST be the same as this file's name
+	const index = src.lastIndexOf('autoload.js');
+	live2d_path = src.substring(0, index);
+})();
 
 // 封装异步加载资源的方法
 function loadExternalResource(url, type) {
