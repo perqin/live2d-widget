@@ -30,7 +30,7 @@
 	position: fixed;
 	transform: translateY(3px);
 	transition: transform .3s ease-in-out, bottom 3s ease-in-out;
-	z-index: 1;
+	z-index: 10;
 }
 
 #waifu:hover {
@@ -40,6 +40,7 @@
 #waifu-tips {
 	animation: shake 50s ease-in-out 5s infinite;
 	background-color: rgba(236, 217, 188, .5);
+	color: black;
 	border: 1px solid rgba(224, 186, 140, .62);
 	border-radius: 12px;
 	box-shadow: 0 3px 15px 2px rgba(191, 158, 118, .2);
